@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -503,28 +504,43 @@ a:hover { color: #FF8533; }
 }
 
 .audit-terminal-continue-wrap {
-  padding: 0 28px 20px;
+  padding: 16px 28px 22px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 12px 16px;
+  justify-content: center;
+  align-items: flex-start;
   border-top: 1px solid rgba(255,255,255,.06);
   background: #0a0e17;
 }
 .audit-terminal-continue-wrap[hidden] {
   display: none !important;
 }
+.audit-terminal-continue-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 36rem;
+}
 .audit-terminal-continue-btn {
   font-family: 'Montserrat', system-ui, sans-serif;
   font-size: 0.82rem;
   font-weight: 600;
-  padding: 10px 20px;
+  padding: 10px 22px;
   border-radius: 8px;
   border: 1px solid rgba(52, 211, 153, 0.45);
   background: rgba(52, 211, 153, 0.12);
   color: #6ee7b7;
   cursor: pointer;
   transition: background 0.15s, border-color 0.15s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.audit-terminal-continue-btn .fa-terminal {
+  font-size: 0.95em;
+  opacity: 0.95;
 }
 .audit-terminal-continue-btn:hover {
   background: rgba(52, 211, 153, 0.2);
@@ -538,6 +554,10 @@ a:hover { color: #FF8533; }
   font-family: 'Fira Code', monospace;
   font-size: 0.72rem;
   color: #64748b;
+  margin: 0;
+  text-align: center;
+  line-height: 1.5;
+  width: 100%;
 }
 
 .audit-scores-section { margin-bottom: 28px; }
@@ -1587,96 +1607,18 @@ a:hover { color: #FF8533; }
       <span class="audit-terminal-dot audit-terminal-dot--g"></span>
       <span class="audit-terminal-bar-title">media-kit-auditor — truckpartsdv.com</span>
     </div>
-    <script type="application/json" id="audit-terminal-data">{
-  "domain": "truckpartsdv.com",
-  "lines": [
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] SITEMAP: \u0412 sitemap \u043d\u0435\u0442 \u0441\u0442\u0440\u0430\u043d\u0438\u0446 \u0441 \u043a\u043e\u0434\u043e\u043c \u043e\u0442\u0432\u0435\u0442\u0430 \u2260 200 \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/sharoshka-golovki-bloka-vaz-2101-21072108321108-klzmz-406-\u00c2\u00a0tverdosplavnaya-avtom\u00c2\u00a0-12231 (404), https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-mercedes/zapchasti-mercedes-axor/xodovaya-chast-mercedes-axor/komplekt-shkvornej-povorotnogo-kulaka-mercedes-actros-axor-\u00c3\u00b854x\u00c3\u00b882x25237-mm-55656-auger (404), htt\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] FAVICON: \u041d\u0430 \u0441\u0430\u0439\u0442\u0435 \u043d\u0435\u0442 \u0441\u0442\u0440\u0430\u043d\u0438\u0446-\u0441\u0438\u0440\u043e\u0442 (\u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b \u0438\u0437 sitemap \u0431\u0435\u0437 \u0432\u0445\u043e\u0434\u044f\u0449\u0438\u0445 \u0441\u0441\u044b\u043b\u043e\u043a) \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-volvo/zapchasti-volvo-fh/sistema-vypuska/gofry-i-truby/prokladka-kolena-vyhlopnogo-kollektora, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-mercedes/zapchasti-mercedes-axor/dvigatel-mercedes-axor/maslyanyj-radiator-dvigatelya-mersedes-aksor-om441-om442-20190344200-bf, https://truckpartsdv.com/avtoza\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] CANONICAL: \u041d\u0435\u0442 \u0441\u0442\u0440\u0430\u043d\u0438\u0446 \u0431\u0435\u0437 canonical \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-steklopodjemnika-metall-2108-6104064m, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21082113-dveri-naruzhnaya-evro-nekrashenaya-komplekt-tyun-avto-2108-610517677, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] CANONICAL: \u041d\u0430 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435 \u0440\u043e\u0432\u043d\u043e \u043e\u0434\u0438\u043d \u0442\u0435\u0433 link rel=canonical \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-rychaga-upravleniya-otopitelem-unip-servis-2108-8109044, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-spinki-sidenya-perednego-2108-6814280, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] CANONICAL: \u041d\u0435\u0442 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u0438\u0445 \u0440\u0430\u0437\u043d\u044b\u0445 canonical \u043d\u0430 \u043e\u0434\u043d\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435 \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-rychaga-upravleniya-otopitelem-unip-servis-2108-8109044, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-spinki-sidenya-perednego-2108-6814280, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruc\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] HTTP: \u041d\u0430 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430\u0445 \u043d\u0435\u0442 \u0441\u0441\u044b\u043b\u043e\u043a \u043d\u0430 \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u044f \u0438\u043b\u0438 \u0444\u0430\u0439\u043b\u044b \u0441 \u043f\u0440\u043e\u0442\u043e\u043a\u043e\u043b\u043e\u043c http \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-rychaga-upravleniya-otopitelem-unip-servis-2108-8109044, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-spinki-sidenya-perednego-2108-6814280, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapch\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u0420\u0410\u0417\u041d\u042b\u0415 \u0412\u0415\u0420\u0421\u0418\u0418 \u0421\u0410\u0419\u0422\u0410: URL \u0441 \u0432\u0435\u0440\u0445\u043d\u0438\u043c \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u043e\u043c \u0440\u0435\u0434\u0438\u0440\u0435\u043a\u0442\u0438\u0442 \u043d\u0430 \u043d\u0438\u0436\u043d\u0438\u0439 \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/sharoshka-golovki-bloka-vaz-2101-21072108321108-klzmz-406-\u00c2\u00a0tverdosplavnaya-avtom\u00c2\u00a0-12231, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-volvo/zapchasti-volvo-fl/dvigatel-volvo-fl/termostat-volvo-fm-fl-12-86\u00c2\u00b0c-s-rezinkoj-thd186-mahle, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-g\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] URL: \u0412 URL \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f \u00ab-\u00bb, \u0430 \u043d\u0435 \u00ab_\u00bb \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-man/zapchasti-man-f2000_1/vyxlopnaya-sistema-man-f2000, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-man/zapchasti-man-f2000_1/vyxlopnaya-sistema-man-f2000/truba-glushitelya-man-f2000-promezhutochnaya-49227-dinex, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-man/zapchasti-man-f2000_1/vyxlopnaya-sistema-man-f2\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] URL: \u0412 URL \u043d\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044e\u0442\u0441\u044f \u0437\u0430\u0433\u043b\u0430\u0432\u043d\u044b\u0435 \u0431\u0443\u043a\u0432\u044b \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/sharoshka-golovki-bloka-vaz-2101-21072108321108-klzmz-406-\u00c2\u00a0tverdosplavnaya-avtom\u00c2\u00a0-12231, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-volvo/zapchasti-volvo-fl/dvigatel-volvo-fl/termostat-volvo-fm-fl-12-86\u00c2\u00b0c-s-rezinkoj-thd186-mahle, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-vol\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] TITLE: \u041d\u0435\u0442 \u0441\u0442\u0440\u0430\u043d\u0438\u0446 \u0441 \u043f\u0443\u0441\u0442\u044b\u043c Title \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-steklopodjemnika-metall-2108-6104064m, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21082113-dveri-naruzhnaya-evro-nekrashenaya-komplekt-tyun-avto-2108-610517677, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] TITLE: \u041d\u0435\u0442 \u0441\u0442\u0440\u0430\u043d\u0438\u0446 \u0441 \u0434\u0443\u0431\u043b\u0438\u0440\u0443\u044e\u0449\u0438\u043c\u0438\u0441\u044f Title \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/sharoshka-golovki-bloka-vaz-2101-21072108321108-klzmz-406-\u00c2\u00a0tverdosplavnaya-avtom\u00c2\u00a0-12231, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-daf/zapchasti-daf-105/dvigatel-daf-105/rolik-obvodnoj-daf-xf105-cf85-xf95-t36528-gates, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-daf/zapchasti-d\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] DESCRIPTION: \u041d\u0435\u0442 \u0441\u0442\u0440\u0430\u043d\u0438\u0446 \u0441 \u043f\u0443\u0441\u0442\u044b\u043c Description \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-steklopodjemnika-metall-2108-6104064m, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21082113-dveri-naruzhnaya-evro-nekrashenaya-komplekt-tyun-avto-2108-610517677, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/r\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] DESCRIPTION: \u041d\u0435\u0442 \u0441\u0442\u0440\u0430\u043d\u0438\u0446 \u0441 \u0434\u0443\u0431\u043b\u0438\u0440\u0443\u044e\u0449\u0438\u043c\u0438\u0441\u044f Description \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/sharoshka-golovki-bloka-vaz-2101-21072108321108-klzmz-406-\u00c2\u00a0tverdosplavnaya-avtom\u00c2\u00a0-12231, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-daf/zapchasti-daf-105/dvigatel-daf-105/rolik-obvodnoj-daf-xf105-cf85-xf95-t36528-gates, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-daf\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] DESCRIPTION: \u0414\u043b\u0438\u043d\u0430 Description \u043d\u0435 \u043f\u0440\u0435\u0432\u044b\u0448\u0430\u0435\u0442 270\u2013300 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432 \u2014 https://truckpartsdv.com/ (442 \u0441\u0438\u043c\u0432.), https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/po-brendam/autex (342 \u0441\u0438\u043c\u0432.)"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] H1: \u041d\u0435\u0442 \u0441\u0442\u0440\u0430\u043d\u0438\u0446 \u0441 \u043f\u0443\u0441\u0442\u044b\u043c H1 \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-steklopodjemnika-metall-2108-6104064m, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21082113-dveri-naruzhnaya-evro-nekrashenaya-komplekt-tyun-avto-2108-610517677, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21082109\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] H1: \u041d\u0435\u0442 \u0441\u0442\u0440\u0430\u043d\u0438\u0446 \u0441 \u0434\u0443\u0431\u043b\u0438\u0440\u0443\u044e\u0449\u0438\u043c\u0438\u0441\u044f H1 \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/sharoshka-golovki-bloka-vaz-2101-21072108321108-klzmz-406-\u00c2\u00a0tverdosplavnaya-avtom\u00c2\u00a0-12231, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-daf/zapchasti-daf-105/dvigatel-daf-105/rolik-obvodnoj-daf-xf105-cf85-xf95-t36528-gates, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-daf/zapchasti-daf-105\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] H1: \u0414\u043b\u0438\u043d\u0430 H1 \u043e\u043f\u0442\u0438\u043c\u0430\u043b\u044c\u043d\u0430\u044f \u2014 \u043d\u0435 1 \u0441\u043b\u043e\u0432\u043e \u0438 \u043d\u0435 3-4 \u0441\u0442\u0440\u043e\u043a\u0438 \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-volvo/zapchasti-volvo-fh/filtry, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-renault/zapchasti-renault-kerax/transmissiya-renault-kerax/sinhronizator, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-volvo/zapchasti-volvo-fh/dvigatel/prokladki-i-salniki/prokladka \u0438 \u0435\u0449\u0451 261"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] H1: ALT-\u0442\u0435\u043a\u0441\u0442 \u043d\u0435 \u0440\u0430\u0432\u0435\u043d H1 \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-daf/zapchasti-daf-105/dvigatel-daf-105/viskomufta-s-elektronnym-upravleniem-dlya-daf-xf105cf85-bez-krylchatki-7043413-cojali, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-daf/zapchasti-daf-105/filtra-daf-105/filtr-maslyanyj-dlya-gruzovikov-daf-cf85iv-i-xf105-p550812-donaldson, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u041c\u0418\u041a\u0420\u041e\u0420\u0410\u0417\u041c\u0415\u0422\u041a\u0410: \u041d\u0430\u043b\u0438\u0447\u0438\u0435 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0437\u043c\u0435\u0442\u043a\u0438 \u0425\u043b\u0435\u0431\u043d\u044b\u0435 \u043a\u0440\u043e\u0448\u043a\u0438 (BreadcrumbList) \u2014 \u0412 \u0431\u043b\u043e\u043a\u0430\u0445 JSON-LD (application/ld+json) \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u041c\u0418\u041a\u0420\u041e\u0420\u0410\u0417\u041c\u0415\u0422\u041a\u0410: \u041d\u0430\u043b\u0438\u0447\u0438\u0435 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0437\u043c\u0435\u0442\u043a\u0438 \u041e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0446\u0438\u044f (Organization / WebSite) \u2014 \u0412 \u0431\u043b\u043e\u043a\u0430\u0445 JSON-LD (application/ld+json) \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u041c\u0418\u041a\u0420\u041e\u0420\u0410\u0417\u041c\u0415\u0422\u041a\u0410: \u041d\u0430\u043b\u0438\u0447\u0438\u0435 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0437\u043c\u0435\u0442\u043a\u0438 \u0422\u043e\u0432\u0430\u0440 (Product) \u2014 \u0412 \u0431\u043b\u043e\u043a\u0430\u0445 JSON-LD (application/ld+json) \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u041c\u0418\u041a\u0420\u041e\u0420\u0410\u0417\u041c\u0415\u0422\u041a\u0410: \u041d\u0430\u043b\u0438\u0447\u0438\u0435 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0437\u043c\u0435\u0442\u043a\u0438 \u0420\u0435\u0439\u0442\u0438\u043d\u0433/\u041e\u0442\u0437\u044b\u0432\u044b (AggregateRating + Review) \u2014 \u0412 \u0431\u043b\u043e\u043a\u0430\u0445 JSON-LD (application/ld+json) \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u041c\u0418\u041a\u0420\u041e\u0420\u0410\u0417\u041c\u0415\u0422\u041a\u0410: \u041d\u0430\u043b\u0438\u0447\u0438\u0435 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0437\u043c\u0435\u0442\u043a\u0438 \u0412\u043e\u043f\u0440\u043e\u0441/\u041e\u0442\u0432\u0435\u0442 (QAPage) \u2014 \u0412 \u0431\u043b\u043e\u043a\u0430\u0445 JSON-LD (application/ld+json) \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u0421\u041a\u041e\u0420\u041e\u0421\u0422\u042c \u0417\u0410\u0413\u0420\u0423\u0417\u041a\u0418: \u0421\u043a\u043e\u0440\u043e\u0441\u0442\u044c \u043e\u0442\u0432\u0435\u0442\u0430 \u0441\u0435\u0440\u0432\u0435\u0440\u0430 \u043d\u0435 \u0431\u043e\u043b\u0435\u0435 500 \u043c\u0441 \u2014 https://truckpartsdv.com/ (35442.65794754028 \u043c\u0441), https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-rychaga-upravleniya-otopitelem-unip-servis-2108-8109044 (36003.51786613464 \u043c\u0441), https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-spinki-sidenya-perednego-2108-6814280 (36114.61806297302 \u043c\u0441) \u0438 \u0435\u0449\u0451 4\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u0421\u041a\u041e\u0420\u041e\u0421\u0422\u042c \u0417\u0410\u0413\u0420\u0423\u0417\u041a\u0418: \u0418\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f CDN \u2014 CDN-\u0437\u0430\u0433\u043e\u043b\u043e\u0432\u043a\u0438 \u043d\u0435 \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0435\u043d\u044b"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u0421\u041a\u041e\u0420\u041e\u0421\u0422\u042c \u0417\u0410\u0413\u0420\u0423\u0417\u041a\u0418: \u0418\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f \u043b\u0435\u043d\u0438\u0432\u0430\u044f \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0430 \u2014 lazy load \u2014 https://truckpartsdv.com/, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-rychaga-upravleniya-otopitelem-unip-servis-2108-8109044, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-spinki-sidenya-perednego-2108-6814280 \u0438 \u0435\u0449\u0451 3334"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u0421\u041a\u041e\u0420\u041e\u0421\u0422\u042c \u0417\u0410\u0413\u0420\u0423\u0417\u041a\u0418: \u0418\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u0442\u0441\u044f \u043a\u0435\u0448\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u2014 Cache-Control \u0437\u0430\u0433\u043e\u043b\u043e\u0432\u043e\u043a \u043d\u0435 \u043d\u0430\u0441\u0442\u0440\u043e\u0435\u043d"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u0412\u0415\u0420\u0421\u0422\u041a\u0410: \u041d\u0430\u043b\u0438\u0447\u0438\u0435 DOCTYPE \u043d\u0430 \u043a\u0430\u0436\u0434\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435 \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-steklopodjemnika-metall-2108-6104064m, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21082113-dveri-naruzhnaya-evro-nekrashenaya-komplekt-tyun-avto-2108-610517677, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruc\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u0412\u0415\u0420\u0421\u0422\u041a\u0410: \u041d\u0430 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435 \u0440\u043e\u0432\u043d\u043e 1 head \u0438 1 /head \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-steklopodjemnika-metall-2108-6104064m, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21082113-dveri-naruzhnaya-evro-nekrashenaya-komplekt-tyun-avto-2108-610517677, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruc\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u0412\u0415\u0420\u0421\u0422\u041a\u0410: \u041d\u0430 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435 \u0440\u043e\u0432\u043d\u043e 1 body \u0438 1 /body \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-steklopodjemnika-metall-2108-6104064m, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21082113-dveri-naruzhnaya-evro-nekrashenaya-komplekt-tyun-avto-2108-610517677, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruc\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u0412\u0415\u0420\u0421\u0422\u041a\u0410: \u041d\u0430 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435 \u0440\u043e\u0432\u043d\u043e 1 html \u0438 1 /html \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-steklopodjemnika-metall-2108-6104064m, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21082113-dveri-naruzhnaya-evro-nekrashenaya-komplekt-tyun-avto-2108-610517677, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruc\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u0412\u0415\u0420\u0421\u0422\u041a\u0410: \u0412 head \u043f\u0440\u0438\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442 \u0442\u0435\u0433 viewport \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-steklopodjemnika-metall-2108-6104064m, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21082113-dveri-naruzhnaya-evro-nekrashenaya-komplekt-tyun-avto-2108-610517677, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchk\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u0418\u0417\u041e\u0411\u0420\u0410\u0416\u0415\u041d\u0418\u042f: \u041d\u0435\u0442 \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0439 \u0431\u0435\u0437 ALT-\u0442\u0435\u043a\u0441\u0442\u0430 (alt=\"\" \u043f\u0443\u0441\u0442\u043e\u0439) \u2014 https://mc.yandex.ru/watch/100122202 \u043d\u0430 https://truckpartsdv.com/,  \u043d\u0430 https://truckpartsdv.com/,  \u043d\u0430 https://truckpartsdv.com/ \u0438 \u0435\u0449\u0451 96684"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u0420\u0410\u0421\u0428\u0418\u0420\u0415\u041d\u041d\u042b\u0419 \u041e\u0422\u0427\u0401\u0422: \u0421\u0442\u0440\u0430\u043d\u0438\u0446\u044b \u0431\u0435\u0437 \u0443\u043d\u0438\u043a\u0430\u043b\u044c\u043d\u044b\u0445 \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0439 (\u043d\u0435\u0442 img, \u0432\u0441\u0442\u0440\u0435\u0447\u0430\u044e\u0449\u0435\u0433\u043e\u0441\u044f \u043d\u0430 \u0441\u0430\u0439\u0442\u0435 \u0440\u043e\u0432\u043d\u043e 1 \u0440\u0430\u0437) \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-rychaga-upravleniya-otopitelem-unip-servis-2108-8109044, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-spinki-sidenya-perednego-2108-6814280, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legko\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u0420\u0410\u0421\u0428\u0418\u0420\u0415\u041d\u041d\u042b\u0419 \u041e\u0422\u0427\u0401\u0422: \u0415\u0441\u0442\u044c \u0432 sitemap.xml, \u043d\u043e \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u044b \u043f\u0440\u0438 \u043e\u0431\u0445\u043e\u0434\u0435 \u0441\u0430\u0439\u0442\u0430 \u2014 URL \u0438\u0437 sitemap, \u043d\u043e\u0440\u043c\u0430\u043b\u0438\u0437\u043e\u0432\u0430\u043d\u043d\u044b\u0435 \u0438 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043d\u044b\u0435 \u0441\u0440\u0435\u0434\u0438 \u0443\u0441\u043f\u0435\u0448\u043d\u043e \u0437\u0430\u0433\u0440\u0443\u0436\u0435\u043d\u043d\u044b\u0445 \u0441\u0442\u0440\u0430\u043d\u0438\u0446 \u043e\u0431\u0445\u043e\u0434\u0430. \u0423\u0447\u0442\u0438\u0442\u0435 \u043b\u0438\u043c\u0438\u0442 \u043e\u0431\u0445\u043e\u0434\u0430 (20000 \u0441\u0442\u0440.): \u0447\u0430\u0441\u0442\u044c URL \u043c\u043e\u0433\u043b\u0430 \u043d\u0435 \u043f\u043e\u043f\u0430\u0441\u0442\u044c \u0432 \u043e\u0447\u0435\u0440\u0435\u0434\u044c. https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/po-brendam/dinex/truba-vyhlopnogo-gaza-15111-dinex, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/po-brendam/dinex/truba-vyhlopnogo-gaza-15114-dinex, https://truckpartsdv.c\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u0420\u0410\u0421\u0428\u0418\u0420\u0415\u041d\u041d\u042b\u0419 \u041e\u0422\u0427\u0401\u0422: \u041f\u043e\u0442\u0435\u0440\u044f\u043d\u043d\u044b\u0435 \u0444\u0430\u0439\u043b\u044b JS (\u0432\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u0438\u0435 script[src], \u043d\u0435 HTTP 2xx) \u2014 https://truckpartsdv.com/assets/js/vendors_main.js (HTTP 404), https://truckpartsdv.com/assets/js/app.js?v=4 (HTTP 404)"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u0420\u0410\u0421\u0428\u0418\u0420\u0415\u041d\u041d\u042b\u0419 \u041e\u0422\u0427\u0401\u0422: \u0421\u0442\u0440\u0430\u043d\u0438\u0446\u044b \u0441 \u043e\u0447\u0435\u043d\u044c \u0431\u043e\u043b\u044c\u0448\u0438\u043c \u0447\u0438\u0441\u043b\u043e\u043c \u0438\u0441\u0445\u043e\u0434\u044f\u0449\u0438\u0445 \u0432\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u0438\u0445 \u0441\u0441\u044b\u043b\u043e\u043a (\u003e200, \u0443\u043d\u0438\u043a.) \u2014 https://truckpartsdv.com/ (706 \u0443\u043d\u0438\u043a.), https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-rychaga-upravleniya-otopitelem-unip-servis-2108-8109044 (671 \u0443\u043d\u0438\u043a.), https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-spinki-sidenya-perednego-2108-6814280 (671 \u0443\u043d\u0438\u043a.), https\u2026"},
-
-    {"status": "red", "text": "[\u041d\u0435 \u043f\u0440\u043e\u0439\u0434\u0435\u043d\u043e] \u0420\u0410\u0421\u0428\u0418\u0420\u0415\u041d\u041d\u042b\u0419 \u041e\u0422\u0427\u0401\u0422: \u041f\u043e\u0441\u0430\u0434\u043e\u0447\u043d\u044b\u0435 URL \u0438\u0437 sitemap \u0441 \u0447\u0438\u0441\u043b\u043e\u043c \u0432\u0445\u043e\u0434\u044f\u0449\u0438\u0445 \u0432\u043d\u0443\u0442\u0440\u0435\u043d\u043d\u0438\u0445 \u0441\u0441\u044b\u043b\u043e\u043a \u003c 5 \u2014 https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-rychaga-upravleniya-otopitelem-unip-servis-2108-8109044 (\u0432\u0445\u043e\u0434\u044f\u0449\u0438\u0445: 1), https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-spinki-sidenya-perednego-2108-6814280 (\u0432\u0445\u043e\u0434\u044f\u0449\u0438\u0445: 1), https://truckpartsdv.com/avtozapchasti/zapchasti\u2026"}
-
-  ]
-}</script>
+    <script type="application/json" id="audit-terminal-data">{"domain":"truckpartsdv.com","lines":[{"status":"red","text":"[Не пройдено] SITEMAP: В sitemap нет страниц с кодом ответа ≠ 200 — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/sharoshka-golovki-bloka-vaz-2101-21072108321108-klzmz-406-Â tverdosplavnaya-avtomÂ -12231 (404), https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-mercedes/zapchasti-mercedes-axor/xodovaya-chast-mercedes-axor/komplekt-shkvornej-povorotnogo-kulaka-mercedes-actros-axor-Ã¸54xÃ¸82x25237-mm-55656-auger (404), htt…"},{"status":"red","text":"[Не пройдено] FAVICON: На сайте нет страниц-сирот (страницы из sitemap без входящих ссылок) — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-volvo/zapchasti-volvo-fh/sistema-vypuska/gofry-i-truby/prokladka-kolena-vyhlopnogo-kollektora, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-mercedes/zapchasti-mercedes-axor/dvigatel-mercedes-axor/maslyanyj-radiator-dvigatelya-mersedes-aksor-om441-om442-20190344200-bf, https://truckpartsdv.com/avtoza…"},{"status":"red","text":"[Не пройдено] CANONICAL: Нет страниц без canonical — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-steklopodjemnika-metall-2108-6104064m, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21082113-dveri-naruzhnaya-evro-nekrashenaya-komplekt-tyun-avto-2108-610517677, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz…"},{"status":"red","text":"[Не пройдено] CANONICAL: На странице ровно один тег link rel=canonical — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-rychaga-upravleniya-otopitelem-unip-servis-2108-8109044, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-spinki-sidenya-perednego-2108-6814280, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-…"},{"status":"red","text":"[Не пройдено] CANONICAL: Нет нескольких разных canonical на одной странице — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-rychaga-upravleniya-otopitelem-unip-servis-2108-8109044, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-spinki-sidenya-perednego-2108-6814280, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruc…"},{"status":"red","text":"[Не пройдено] HTTP: На страницах нет ссылок на изображения или файлы с протоколом http — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-rychaga-upravleniya-otopitelem-unip-servis-2108-8109044, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-spinki-sidenya-perednego-2108-6814280, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapch…"},{"status":"red","text":"[Не пройдено] РАЗНЫЕ ВЕРСИИ САЙТА: URL с верхним регистром редиректит на нижний — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/sharoshka-golovki-bloka-vaz-2101-21072108321108-klzmz-406-Â tverdosplavnaya-avtomÂ -12231, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-volvo/zapchasti-volvo-fl/dvigatel-volvo-fl/termostat-volvo-fm-fl-12-86Â°c-s-rezinkoj-thd186-mahle, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-g…"},{"status":"red","text":"[Не пройдено] URL: В URL используется «-», а не «_» — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-man/zapchasti-man-f2000_1/vyxlopnaya-sistema-man-f2000, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-man/zapchasti-man-f2000_1/vyxlopnaya-sistema-man-f2000/truba-glushitelya-man-f2000-promezhutochnaya-49227-dinex, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-man/zapchasti-man-f2000_1/vyxlopnaya-sistema-man-f2…"},{"status":"red","text":"[Не пройдено] URL: В URL не используются заглавные буквы — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/sharoshka-golovki-bloka-vaz-2101-21072108321108-klzmz-406-Â tverdosplavnaya-avtomÂ -12231, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-volvo/zapchasti-volvo-fl/dvigatel-volvo-fl/termostat-volvo-fm-fl-12-86Â°c-s-rezinkoj-thd186-mahle, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-vol…"},{"status":"red","text":"[Не пройдено] TITLE: Нет страниц с пустым Title — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-steklopodjemnika-metall-2108-6104064m, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21082113-dveri-naruzhnaya-evro-nekrashenaya-komplekt-tyun-avto-2108-610517677, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21…"},{"status":"red","text":"[Не пройдено] TITLE: Нет страниц с дублирующимися Title — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/sharoshka-golovki-bloka-vaz-2101-21072108321108-klzmz-406-Â tverdosplavnaya-avtomÂ -12231, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-daf/zapchasti-daf-105/dvigatel-daf-105/rolik-obvodnoj-daf-xf105-cf85-xf95-t36528-gates, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-daf/zapchasti-d…"},{"status":"red","text":"[Не пройдено] DESCRIPTION: Нет страниц с пустым Description — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-steklopodjemnika-metall-2108-6104064m, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21082113-dveri-naruzhnaya-evro-nekrashenaya-komplekt-tyun-avto-2108-610517677, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/r…"},{"status":"red","text":"[Не пройдено] DESCRIPTION: Нет страниц с дублирующимися Description — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/sharoshka-golovki-bloka-vaz-2101-21072108321108-klzmz-406-Â tverdosplavnaya-avtomÂ -12231, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-daf/zapchasti-daf-105/dvigatel-daf-105/rolik-obvodnoj-daf-xf105-cf85-xf95-t36528-gates, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-daf…"},{"status":"red","text":"[Не пройдено] DESCRIPTION: Длина Description не превышает 270–300 символов — https://truckpartsdv.com/ (442 симв.), https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/po-brendam/autex (342 симв.)"},{"status":"red","text":"[Не пройдено] H1: Нет страниц с пустым H1 — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-steklopodjemnika-metall-2108-6104064m, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21082113-dveri-naruzhnaya-evro-nekrashenaya-komplekt-tyun-avto-2108-610517677, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21082109…"},{"status":"red","text":"[Не пройдено] H1: Нет страниц с дублирующимися H1 — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/sharoshka-golovki-bloka-vaz-2101-21072108321108-klzmz-406-Â tverdosplavnaya-avtomÂ -12231, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-daf/zapchasti-daf-105/dvigatel-daf-105/rolik-obvodnoj-daf-xf105-cf85-xf95-t36528-gates, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-daf/zapchasti-daf-105…"},{"status":"red","text":"[Не пройдено] H1: Длина H1 оптимальная — не 1 слово и не 3-4 строки — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-volvo/zapchasti-volvo-fh/filtry, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-renault/zapchasti-renault-kerax/transmissiya-renault-kerax/sinhronizator, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-volvo/zapchasti-volvo-fh/dvigatel/prokladki-i-salniki/prokladka и ещё 261"},{"status":"red","text":"[Не пройдено] H1: ALT-текст не равен H1 — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-daf/zapchasti-daf-105/dvigatel-daf-105/viskomufta-s-elektronnym-upravleniem-dlya-daf-xf105cf85-bez-krylchatki-7043413-cojali, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti-daf/zapchasti-daf-105/filtra-daf-105/filtr-maslyanyj-dlya-gruzovikov-daf-cf85iv-i-xf105-p550812-donaldson, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-gruzovikov/zapchasti…"},{"status":"red","text":"[Не пройдено] МИКРОРАЗМЕТКА: Наличие микроразметки Хлебные крошки (BreadcrumbList)"},{"status":"red","text":"[Не пройдено] МИКРОРАЗМЕТКА: Наличие микроразметки Рейтинг/Отзывы (AggregateRating + Review) — В блоках JSON-LD (application/ld+json) не найдено"},{"status":"red","text":"[Не пройдено] МИКРОРАЗМЕТКА: Наличие микроразметки Вопрос/Ответ (QAPage) — В блоках JSON-LD (application/ld+json) не найдено"},{"status":"red","text":"[Не пройдено] СКОРОСТЬ ЗАГРУЗКИ: Скорость ответа сервера не более 500 мс — https://truckpartsdv.com/ (35442.65794754028 мс), https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-rychaga-upravleniya-otopitelem-unip-servis-2108-8109044 (36003.51786613464 мс), https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-spinki-sidenya-perednego-2108-6814280 (36114.61806297302 мс) и ещё 4…"},{"status":"red","text":"[Не пройдено] СКОРОСТЬ ЗАГРУЗКИ: Используется CDN — CDN-заголовки не обнаружены"},{"status":"red","text":"[Не пройдено] СКОРОСТЬ ЗАГРУЗКИ: Используется ленивая загрузка — lazy load — https://truckpartsdv.com/, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-rychaga-upravleniya-otopitelem-unip-servis-2108-8109044, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-spinki-sidenya-perednego-2108-6814280 и ещё 3334"},{"status":"red","text":"[Не пройдено] СКОРОСТЬ ЗАГРУЗКИ: Используется кеширование — Cache-Control заголовок не настроен"},{"status":"red","text":"[Не пройдено] ВЕРСТКА: Наличие DOCTYPE на каждой странице — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-steklopodjemnika-metall-2108-6104064m, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-21082113-dveri-naruzhnaya-evro-nekrashenaya-komplekt-tyun-avto-2108-610517677, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruc…"},{"status":"red","text":"[Не пройдено] ИЗОБРАЖЕНИЯ: Нет изображений без ALT-текста (alt=\"\" пустой) — https://mc.yandex.ru/watch/100122202 на https://truckpartsdv.com/,  на https://truckpartsdv.com/,  на https://truckpartsdv.com/ и ещё 96684"},{"status":"red","text":"[Не пройдено] РАСШИРЕННЫЙ ОТЧЁТ: Страницы без уникальных изображений (нет img, встречающегося на сайте ровно 1 раз) — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-rychaga-upravleniya-otopitelem-unip-servis-2108-8109044, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-spinki-sidenya-perednego-2108-6814280, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legko…"},{"status":"red","text":"[Не пройдено] РАСШИРЕННЫЙ ОТЧЁТ: Есть в sitemap.xml, но не найдены при обходе сайта — URL из sitemap, нормализованные и не найденные среди успешно загруженных страниц обхода. Учтите лимит обхода (20000 стр.): часть URL могла не попасть в очередь. https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/po-brendam/dinex/truba-vyhlopnogo-gaza-15111-dinex, https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/po-brendam/dinex/truba-vyhlopnogo-gaza-15114-dinex, https://truckpartsdv.c…"},{"status":"red","text":"[Не пройдено] РАСШИРЕННЫЙ ОТЧЁТ: Потерянные файлы JS (внутренние script[src], не HTTP 2xx) — https://truckpartsdv.com/assets/js/vendors_main.js (HTTP 404), https://truckpartsdv.com/assets/js/app.js?v=4 (HTTP 404)"},{"status":"red","text":"[Не пройдено] РАСШИРЕННЫЙ ОТЧЁТ: Страницы с очень большим числом исходящих внутренних ссылок (>200, уник.) — https://truckpartsdv.com/ (706 уник.), https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-rychaga-upravleniya-otopitelem-unip-servis-2108-8109044 (671 уник.), https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-spinki-sidenya-perednego-2108-6814280 (671 уник.), https…"},{"status":"red","text":"[Не пройдено] РАСШИРЕННЫЙ ОТЧЁТ: Посадочные URL из sitemap с числом входящих внутренних ссылок \u003c 5 — https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-rychaga-upravleniya-otopitelem-unip-servis-2108-8109044 (входящих: 1), https://truckpartsdv.com/avtozapchasti/zapchasti-dlya-legkovyh/zapchasti-vaz-i-uaz/zapchasti-vaz/ruchka-vaz-2108-spinki-sidenya-perednego-2108-6814280 (входящих: 1), https://truckpartsdv.com/avtozapchasti/zapchasti…"}]}</script>
     <div class="audit-terminal-body">
-      <pre class="audit-terminal-pre" id="audit-terminal-pre"><span class="term-cursor" aria-hidden="true"></span></pre>
+      <pre class="audit-terminal-pre" id="audit-terminal-pre"></pre>
     </div>
     <div class="audit-terminal-continue-wrap" id="audit-terminal-continue-wrap" hidden>
-      <button type="button" class="audit-terminal-continue-btn" id="audit-terminal-continue">
-        Продолжить аудит
-      </button>
-      <span class="audit-terminal-continue-hint" id="audit-terminal-continue-hint" aria-hidden="true"></span>
+      <div class="audit-terminal-continue-inner">
+        <button type="button" class="audit-terminal-continue-btn" id="audit-terminal-continue">
+          <i class="fa-solid fa-terminal" aria-hidden="true"></i>
+          <span>Продолжить аудит</span>
+        </button>
+        <p class="audit-terminal-continue-hint" id="audit-terminal-continue-hint" aria-live="polite"></p>
+      </div>
     </div>
   </div>
 </section>
@@ -4446,39 +4388,76 @@ a:hover { color: #FF8533; }
 <script>(function () {
   var dataEl = document.getElementById('audit-terminal-data');
   var pre = document.getElementById('audit-terminal-pre');
-  var wrap = document.getElementById('audit-terminal-continue-wrap');
-  var btn = document.getElementById('audit-terminal-continue');
-  var hint = document.getElementById('audit-terminal-continue-hint');
   if (!dataEl || !pre) return;
 
-  /** Доля строк до кнопки «Продолжить». */
-  var INITIAL_LINE_FRACTION = 0.28;
-  var MIN_LINES_BEFORE_SPLIT = 12;
+  /** Сколько визуальных строк (после разбиения по \\n) до кнопки «Продолжить». */
+  var MAX_VISUAL_LINES_BEFORE_CONTINUE = 10;
 
-  /** Целевая длительность всей «печати» (мс), распределяется по символам/строкам. */
-  var TOTAL_TYPING_MS = 650;
-  /** Не печатать посимвольно, если вышло меньше мс на символ (иначе браузерный таймер всё равно ~4 мс). */
-  var MIN_MS_PER_CHAR = 0.85;
+  /** Пауза перед стартом: пустой терминал. */
+  var INITIAL_PAUSE_MS = 480;
+  /** Целевое время набора приглашения $ scanning… (мс). */
+  var PROMPT_TARGET_MS = 520;
+  /** Целевое время строки «scan complete.» (мс). */
+  var DONE_TARGET_MS = 720;
+  /** Мин./макс. задержка на один символ при адаптивном наборе (мс). */
+  var CHAR_MS_MIN = 6;
+  var CHAR_MS_MAX = 20;
+  /** Нижняя/верхняя граница длительности фазы со строками отчёта (мс). */
+  var LINES_PHASE_MS_MIN = 4500;
+  var LINES_PHASE_MS_MAX = 22000;
 
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var data;
-  try { data = JSON.parse(dataEl.textContent); } catch (e) { return; }
+  try {
+    var jsonRaw = (dataEl.textContent || '').replace(/^\uFEFF/, '').trim();
+    if (!jsonRaw) {
+      throw new Error('пустые данные терминала');
+    }
+    data = JSON.parse(jsonRaw);
+  } catch (e) {
+    if (typeof console !== 'undefined' && console.error) {
+      console.error('[audit-terminal] не удалось разобрать JSON', e);
+    }
+    return;
+  }
   var lines = data.lines || [];
   var domain = data.domain || '';
 
-  function splitLines(all) {
-    if (!all || all.length < MIN_LINES_BEFORE_SPLIT) {
-      return { first: all || [], rest: [] };
+  /** Один пункт отчёта → несколько строк, если в text есть переносы. */
+  function expandToVisualLines(lineRows) {
+    var out = [];
+    var i, j, chunks;
+    for (i = 0; i < lineRows.length; i++) {
+      var row = lineRows[i];
+      var status = row.status;
+      var raw = row.text == null ? '' : String(row.text);
+      chunks = raw.split(/\r\n|\r|\n|\u2028|\u2029/);
+      for (j = 0; j < chunks.length; j++) {
+        out.push({ status: status, text: chunks[j] });
+      }
     }
-    var n = Math.max(1, Math.ceil(all.length * INITIAL_LINE_FRACTION));
-    if (n >= all.length) {
-      return { first: all, rest: [] };
+    return out;
+  }
+
+  function splitVisualLines(all) {
+    var flat = expandToVisualLines(all || []);
+    var total = flat.length;
+    if (total <= MAX_VISUAL_LINES_BEFORE_CONTINUE) {
+      return { first: flat, rest: [], totalVisual: total };
     }
-    return { first: all.slice(0, n), rest: all.slice(n) };
+    return {
+      first: flat.slice(0, MAX_VISUAL_LINES_BEFORE_CONTINUE),
+      rest: flat.slice(MAX_VISUAL_LINES_BEFORE_CONTINUE),
+      totalVisual: total
+    };
   }
 
   function wait(ms) {
     return new Promise(function (resolve) { setTimeout(resolve, ms); });
+  }
+
+  function clamp(n, lo, hi) {
+    return Math.max(lo, Math.min(hi, n));
   }
 
   function ensureCursor() {
@@ -4504,22 +4483,25 @@ a:hover { color: #FF8533; }
     }
   }
 
-  function countUnits(promptText, lineRows, doneText) {
-    var n = (promptText || '').length;
+  function linePhaseSteps(lineRows) {
+    var s = 0;
     var j;
     for (j = 0; j < lineRows.length; j++) {
-      n += 1 + (lineRows[j].text || '').length;
+      s += 1 + ((lineRows[j].text || '').length);
     }
-    if (doneText) n += 1 + doneText.length;
-    return Math.max(n, 1);
+    return Math.max(s, 1);
   }
 
-  /** Корректная задержка на символ: вся «тишина» делится на все юниты разом. */
-  function msPerChar(totalUnits) {
-    return totalUnits > 0 ? TOTAL_TYPING_MS / totalUnits : 6;
+  /** Задержка до следующего шага: укладываемся в targetMs, символы читаемы. */
+  function delayForStep(phaseStart, targetMs, stepsLeft) {
+    if (stepsLeft <= 0) return CHAR_MS_MIN;
+    var elapsed = Date.now() - phaseStart;
+    var rem = targetMs - elapsed;
+    var d = rem / stepsLeft;
+    return clamp(d, CHAR_MS_MIN, CHAR_MS_MAX);
   }
 
-  async function typePrompt(promptText, cursor, totalUnits) {
+  async function typePrompt(promptText, cursor) {
     var promptSpan = document.createElement('span');
     promptSpan.className = 'tl tl--prompt';
     pre.insertBefore(promptSpan, cursor);
@@ -4529,68 +4511,58 @@ a:hover { color: #FF8533; }
       appendCursorAfter(promptSpan);
       return;
     }
-    var pu = Math.max(promptText.length, 1);
-    var budget = TOTAL_TYPING_MS * pu / totalUnits;
-    var d = Math.min(5, Math.max(0.5, budget / pu));
-    if (d < MIN_MS_PER_CHAR) {
-      promptSpan.textContent = promptText;
-      appendCursorAfter(promptSpan);
-      return;
-    }
-    for (i = 0; i < promptText.length; i++) {
+    var t0 = Date.now();
+    var pu = promptText.length;
+    for (i = 0; i < pu; i++) {
+      var left = pu - i;
+      var d = delayForStep(t0, PROMPT_TARGET_MS, left);
+      await wait(d);
       promptSpan.appendChild(document.createTextNode(promptText.charAt(i)));
       appendCursorAfter(promptSpan);
-      await wait(d);
     }
   }
 
-  async function typeLineRows(lineRows, cursor, totalUnits) {
-    var j, k, t;
+  async function typeLineRows(lineRows, cursor) {
+    var j, k, t, r;
     if (reduce) {
-      lineRows.forEach(function (row) {
+      for (r = 0; r < lineRows.length; r++) {
         pre.insertBefore(document.createTextNode('\n'), cursor);
-        var s = document.createElement('span');
-        s.className = 'tl tl--' + row.status;
-        s.textContent = row.text;
-        pre.insertBefore(s, cursor);
-      });
-      var lastSpan = pre.querySelector('.tl:last-of-type');
-      appendCursorAfter(lastSpan || pre.firstChild);
-      return;
-    }
-    var phaseUnits = countUnits('', lineRows, '');
-    var budget = TOTAL_TYPING_MS * phaseUnits / totalUnits;
-    var dChar = phaseUnits > 0 ? budget / phaseUnits : 6;
-
-    if (dChar >= MIN_MS_PER_CHAR && phaseUnits <= 1800) {
-      for (j = 0; j < lineRows.length; j++) {
-        pre.insertBefore(document.createTextNode('\n'), cursor);
-        var lineSpan = document.createElement('span');
-        lineSpan.className = 'tl tl--' + lineRows[j].status;
-        pre.insertBefore(lineSpan, cursor);
-        t = lineRows[j].text || '';
-        for (k = 0; k < t.length; k++) {
-          lineSpan.appendChild(document.createTextNode(t.charAt(k)));
-          appendCursorAfter(lineSpan);
-          await wait(dChar);
-        }
+        var s0 = document.createElement('span');
+        s0.className = 'tl tl--' + lineRows[r].status;
+        s0.textContent = lineRows[r].text;
+        pre.insertBefore(s0, cursor);
+        appendCursorAfter(s0);
+        if (r < lineRows.length - 1) await wait(40);
       }
       return;
     }
 
-    var gap = Math.min(10, Math.max(2, budget / Math.max(1, lineRows.length)));
+    var stepsTotal = linePhaseSteps(lineRows);
+    var t0 = Date.now();
+    var targetMs = stepsTotal * 5 + lineRows.length * 90;
+    targetMs = clamp(targetMs, LINES_PHASE_MS_MIN, LINES_PHASE_MS_MAX);
+
+    var stepIndex = 0;
     for (j = 0; j < lineRows.length; j++) {
+      var dNl = delayForStep(t0, targetMs, stepsTotal - stepIndex);
+      await wait(dNl);
+      stepIndex++;
       pre.insertBefore(document.createTextNode('\n'), cursor);
-      var span = document.createElement('span');
-      span.className = 'tl tl--' + lineRows[j].status;
-      span.textContent = lineRows[j].text || '';
-      pre.insertBefore(span, cursor);
-      appendCursorAfter(span);
-      if (j < lineRows.length - 1) await wait(gap);
+      var lineSpan = document.createElement('span');
+      lineSpan.className = 'tl tl--' + lineRows[j].status;
+      pre.insertBefore(lineSpan, cursor);
+      t = lineRows[j].text || '';
+      for (k = 0; k < t.length; k++) {
+        var dCh = delayForStep(t0, targetMs, stepsTotal - stepIndex);
+        await wait(dCh);
+        stepIndex++;
+        lineSpan.appendChild(document.createTextNode(t.charAt(k)));
+        appendCursorAfter(lineSpan);
+      }
     }
   }
 
-  async function typeDone(doneText, cursor, totalUnits) {
+  async function typeDone(doneText, cursor) {
     pre.insertBefore(document.createTextNode('\n'), cursor);
     var doneSpan = document.createElement('span');
     doneSpan.className = 'tl tl--info';
@@ -4600,24 +4572,15 @@ a:hover { color: #FF8533; }
       pre.appendChild(cursor);
       return;
     }
-    var du = Math.max(doneText.length, 1);
-    var budget = TOTAL_TYPING_MS * (du + 1) / totalUnits;
-    if (budget < 28) {
-      doneSpan.textContent = doneText;
-      pre.appendChild(cursor);
-      return;
-    }
-    var d = Math.min(4, Math.max(0.4, budget / du));
-    if (d < MIN_MS_PER_CHAR) {
-      doneSpan.textContent = doneText;
-      pre.appendChild(cursor);
-      return;
-    }
-    var k;
-    for (k = 0; k < doneText.length; k++) {
-      doneSpan.appendChild(document.createTextNode(doneText.charAt(k)));
-      appendCursorAfter(doneSpan);
+    var t0 = Date.now();
+    var du = doneText.length;
+    var i;
+    for (i = 0; i < du; i++) {
+      var left = du - i;
+      var d = delayForStep(t0, DONE_TARGET_MS, left);
       await wait(d);
+      doneSpan.appendChild(document.createTextNode(doneText.charAt(i)));
+      appendCursorAfter(doneSpan);
     }
     pre.appendChild(cursor);
   }
@@ -4627,60 +4590,68 @@ a:hover { color: #FF8533; }
     pre.innerHTML = '';
     pre.appendChild(cursor);
 
+    await wait(INITIAL_PAUSE_MS);
+
     var promptText = '$ scanning ' + domain + '...';
     var doneText = 'scan complete.';
-    var parts = splitLines(lines);
+    var parts = splitVisualLines(lines);
     var firstLines = parts.first;
     var restLines = parts.rest;
-    var totalUnits = countUnits(promptText, lines, doneText);
+    var totalVisual = parts.totalVisual;
 
-    await typePrompt(promptText, cursor, totalUnits);
-    await typeLineRows(firstLines, cursor, totalUnits);
+    await typePrompt(promptText, cursor);
+    await typeLineRows(firstLines, cursor);
 
-    if (restLines.length && wrap && btn && hint) {
-      hint.textContent = 'Показано ' + firstLines.length + ' из ' + lines.length + ' строк.';
-      wrap.hidden = false;
+    var continueWrap = document.getElementById('audit-terminal-continue-wrap');
+    var continueBtn = document.getElementById('audit-terminal-continue');
+    var continueHint = document.getElementById('audit-terminal-continue-hint');
+    if (restLines.length && continueWrap && continueBtn && continueHint) {
+      continueHint.textContent =
+        'Показано ' +
+        firstLines.length +
+        ' из ' +
+        totalVisual +
+        ' строк.';
+      continueWrap.removeAttribute('hidden');
+      continueWrap.hidden = false;
+      if (typeof continueWrap.scrollIntoView === 'function') {
+        try {
+          continueWrap.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+        } catch (eScroll) {
+          continueWrap.scrollIntoView(true);
+        }
+      }
       var continueResolve;
       var continuePromise = new Promise(function (res) { continueResolve = res; });
-      btn.onclick = function () {
-        wrap.hidden = true;
-        btn.onclick = null;
+      continueBtn.onclick = function () {
+        continueWrap.hidden = true;
+        continueWrap.setAttribute('hidden', '');
+        continueBtn.onclick = null;
         continueResolve();
       };
       await continuePromise;
 
-      await typeLineRows(restLines, cursor, totalUnits);
-      await typeDone(doneText, cursor, totalUnits);
+      await typeLineRows(restLines, cursor);
+      await typeDone(doneText, cursor);
     } else {
-      await typeDone(doneText, cursor, totalUnits);
+      await typeDone(doneText, cursor);
     }
   }
 
   function startWhenVisible() {
-    var section = document.getElementById('audit-terminal');
     var started = false;
     function go() {
       if (started) return;
       started = true;
-      runTyping().catch(function () {});
+      runTyping().catch(function (err) {
+        if (typeof console !== 'undefined' && console.error) {
+          console.error('[audit-terminal]', err);
+        }
+      });
     }
-    if (reduce) {
-      go();
-      return;
-    }
-    if (section && 'IntersectionObserver' in window) {
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (en) {
-          if (en.isIntersecting) {
-            io.disconnect();
-            go();
-          }
-        });
-      }, { threshold: 0.12, rootMargin: '0px' });
-      io.observe(section);
-    } else {
-      go();
-    }
+    /* Без IntersectionObserver: у .js-reveal.reveal-pending стоит opacity:0 — в части
+       браузеров не приходит «пересечение», вывод не начинается, пока не сработает запасной таймер. */
+    setTimeout(go, 0);
   }
 
   if (document.readyState === 'loading') {
